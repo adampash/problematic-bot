@@ -6,7 +6,7 @@ describe TwitterSearch do
   it "searches twitter" do
     VCR.use_cassette("basic search") do
       tweets = TwitterSearch.search('adampash', 'bartending')
-      expect(tweets.length).to eq 1
+      expect(tweets.count).to eq 1
     end
   end
 end

@@ -10,7 +10,7 @@ module TwitterSearch
     end
   end
   def self.search(username, query)
-    client.search("from:#{username} #{query}").attrs[:statuses]
+    client.search("from:#{username} #{query}")
   end
 
 end
