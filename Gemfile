@@ -40,6 +40,7 @@ group :development, :test do
   gem 'pry'
   gem 'dotenv'
   gem 'vcr'
+  gem 'webmock'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'guard-rspec'
