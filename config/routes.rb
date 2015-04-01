@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'search/show'
-
-  get 'search/index'
+  get 'search/:username/:category' => 'search#show', as: :search
+  get 'search/index' => 'search#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -5,8 +5,9 @@ RSpec.describe SearchController, type: :controller do
 
   describe "GET #show" do
     it "returns http success", :vcr do
-      get :show
+      get :show, username: 'adampash', category: 'nerds'
       expect(response).to have_http_status(:success)
+      expect(response).to render_template("show")
     end
   end
 

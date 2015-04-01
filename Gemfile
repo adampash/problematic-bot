@@ -35,12 +35,13 @@ gem 'twitter'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'webmock', group: :test
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
   gem 'dotenv'
   gem 'vcr'
-  gem 'webmock'
   gem 'rspec'
   gem 'rspec-rails'
   gem 'guard-rspec'
